@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Copy Selected Text",
+  "version": "1.0",
+  "description": "Automatically copies selected text",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
